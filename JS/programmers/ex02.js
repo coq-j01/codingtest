@@ -9,6 +9,7 @@ let input = [];
 
 rl.on("line", function (line) {
   input = line.split(" ");
+  rl.close();
 }).on("close", function () {
   console.log(`a = ${input[0]}\nb = ${input[1]}`);
 });
